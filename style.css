@@ -27,6 +27,7 @@ h1{
     padding: 15px;
     margin: 20px auto;
     line-height: 30px;
+    text-align: center;
 }
 div #list{
     margin: 25px auto 25px auto;
@@ -44,12 +45,13 @@ div #list{
     transition: s;
 }
 
-}
+
 .linkbox:hover{
-    /*outline: 5px solid rgba(189, 189, 189, 0.151);*/
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(144,0,255,1) 100%); 
+    color: white;
+    outline: 3px solid rgba(255, 255, 255, 0.801);
+    background: rgba(255, 255, 255, 0.158); 
     text-decoration: none;
-    transition: 2s;
+    transition: 0.4s;
 
 }
 a{
