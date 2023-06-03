@@ -5,46 +5,80 @@
 }
 
 body {
-    background-color: #19191c;
+    background-image: url(./images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
+
 #main{
-    padding: 15px 15px 15px 15px;
-    border: 1px solid red;
+    padding: 50px 15px 15px 15px;
     color: white;
     text-align: center;
-    width: 60%;
-   
+    width: 80%;
+    max-width: 500px;
     margin: 50px auto;
 }
-.linkbox{
-    
 
+h1{ 
+    font-size: 35px;
+    width: 50%;
+    padding: 15px;
+    margin: 20px auto;
+    line-height: 30px;
+}
+div #list{
+    margin: 25px auto 25px auto;
+}
+.linkbox{
     text-decoration: none;
-    color: white;
     display: block;
+    color: rgb(45, 4, 141);
     margin: 10px auto;
     padding: 15px;
     text-align: center;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 10px;
-    background-color: rgba(199, 199, 199, 0.411);
+    background-color: rgb(255, 255, 255);
+    transition: s;
 }
-footer{
 
-    display: flexbox;
-    width: 30%;
-    padding: 15px;
-    margin:15px auto 15px;
-    text-align: center;    
 }
-h1{ 
-    font-size: 30px;
+.linkbox:hover{
+    /*outline: 5px solid rgba(189, 189, 189, 0.151);*/
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(144,0,255,1) 100%); 
+    text-decoration: none;
+    transition: 2s;
+
+}
+a{
+    text-decoration: none;
+}
+div #social{
+    margin-top: 60px;
+}
+.fab{
+    color: rgb(45, 4, 141);
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 50%;
+    transition: 0.3s;
+    font-size: 25px;
+
+    
+}
+.fab:hover {
+    outline: 8px solid rgba(189, 189, 189, 0.151);
+    border-radius: 50%;
+}
+
+footer{
+    display: box;
+    padding: 15px;
     width: 50%;
-    padding: 15px;
-    margin: auto;
+    margin: auto; 
+  
 }
-.socialmedia{
-    width: 20px;
-    fill: green;
-}
+
