@@ -1,20 +1,32 @@
+html.light{
+    --main-color: white;
+    --main-bg: rgb(45, 4, 141);
+    --bg-img: url(./images/bg-mobile-light.jpg);
+    --icon: url(https://pixsector.com/cache/afa23d3a/av1c12f667576e96088e6.png);
+  }
+:root {
+    --main-color: rgb(45, 4, 141);
+    --main-bg: white;
+    --bg-img: url(./images/bg.png);
+    --icon: url(https://www.nicepng.com/png/full/204-2043038_white-lightbulb-icon-light-bulb-icon-white.png);
+  }
 * {
-    color: white;
+    color: var(--main-bg);
     font-family: 'Geologica', sans-serif;
     font-size: 20px;
 }
 
 body {
-    background-image: url(./images/bg.png);
+    background-image: var(--bg-img);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 
 }
 
 #main{
     padding: 50px 15px 15px 15px;
-    color: white;
+    color: var(--main-bg);
     text-align: center;
     width: 80%;
     max-width: 500px;
@@ -24,8 +36,7 @@ body {
 h1{ 
     font-size: 35px;
     width: 50%;
-    padding: 15px;
-    margin: 20px auto;
+    margin: auto;
     line-height: 30px;
     text-align: center;
 }
@@ -35,20 +46,20 @@ div #list{
 .linkbox{
     text-decoration: none;
     display: block;
-    color: rgb(45, 4, 141);
+    color: var(--main-color);
     margin: 10px auto;
     padding: 15px;
     text-align: center;
     max-width: 350px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--main-bg);
     transition: s;
 }
 
 
 .linkbox:hover{
-    color: white;
-    outline: 3px solid rgba(255, 255, 255, 0.801);
+    color: var(--main-bg);
+    outline: 3px solid var(--main-bg);
     background: rgba(255, 255, 255, 0.158); 
     text-decoration: none;
     transition: 0.4s;
@@ -61,8 +72,8 @@ div #social{
     margin-top: 60px;
 }
 .fab{
-    color: rgb(45, 4, 141);
-    background-color: white;
+    color: var(--main-color);
+    background-color: var(--main-bg);
     padding: 10px;
     margin: 3px;
     border-radius: 50%;
@@ -80,7 +91,33 @@ footer{
     display: box;
     padding: 15px;
     width: 50%;
-    margin: auto; 
-  
+    margin: auto;
+ } 
+
+
+img#btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    border: 0px solid var(--main-bg);
+    border-radius: 50%;
+    content: var(--icon);
+
 }
 
+@media (min-width: 700px)
+{
+    html.light{
+        --bg-img: url(./images/bg-desktop-light.jpg);
+          }
+    :root {
+        --bg-img: url(./images/bg.png);
+      }
+    
+      body{
+    background: var(--bg-img) no-repeat center center fixed; 
+    background-size: cover;
+      }
+}
