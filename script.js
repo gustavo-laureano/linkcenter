@@ -12,5 +12,5 @@ function theme(){
     document.getElementById('info').style.display = "block";
 //sumir com o tempo
 
-  }*/
-
+  }
+*/

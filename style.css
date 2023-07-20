@@ -2,7 +2,7 @@ html.light{
     --main-color: white;
     --main-bg: #2d048d;
     --bg-img:linear-gradient(80deg, rgba(246,213,227,1) 0%, rgba(255,194,219,1) 29%, rgba(255,255,255,1) 55%, rgba(238,174,202,1) 100%);     
-    --icon: url(https://pixsector.com/cache/afa23d3a/av1c12f667576e96088e6.png);
+    --icon: url();
     --link-hover: rgba(255, 255, 255, 0.158);
     --icon-hover: rgba(99, 8, 204, 0.151);
 }
@@ -11,8 +11,7 @@ html.light{
     --main-bg: white;
 
     --bg-img: linear-gradient(76deg, rgba(91,9,121,1) 5%, rgba(51,9,121,1) 50%, rgba(144,0,255,1) 100%); 
-    --icon: url(https://www.nicepng.com/png/full/204-2043038_white-lightbulb-icon-light-bulb-icon-white.png);
-    --link-hover: rgba(255, 255, 255, 0.158);
+    --icon: url();
     --icon-hover: rgba(189, 189, 189, 0.151);
 }
 * {
@@ -42,12 +41,29 @@ body {
 h1{ 
     font-size: 35px;
     width: 50%;
-    margin: auto;
+    margin: 10px auto;
     line-height: 30px;
     text-align: center;
 }
+
+#pp{
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    border: 5px solid var(--main-bg);
+    border-radius: 50%;
+    transition: 1s;
+}
+#pp:hover{
+    width: 140px;
+    height: 140px;
+    transition: 1s;
+    border: 10px solid rgba(231, 231, 231, 0.199);
+
+}
+
 div #list{
-    margin: 25px auto 25px auto;
+    margin: 10px auto 10px auto;
 }
 .linkbox{
     text-decoration: none;
@@ -102,20 +118,17 @@ footer{
  } 
 
 
-img#btn{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-    border: 0px solid var(--main-bg);
+div#btn{
+    margin: auto;
+    border: 10px solid var(--main-bg);
     border-radius: 50%;
-    content: var(--icon);
+    width: 10px;
+    height: 10px;
 
 }
 div#info{
-    background-color: rgb(34, 34, 34);
-    padding: 10px;
+    background-color: rgba(170, 170, 170, 0.185);
+    padding: 5px;
     border-radius: 10px;
     width: 50%;
     height: 50px;
