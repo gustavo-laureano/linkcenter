@@ -1,18 +1,19 @@
 html.light{
     --main-color: white;
-    --main-bg: #2d048d;
-    --bg-img:linear-gradient(80deg, rgba(246,213,227,1) 0%, rgba(255,194,219,1) 29%, rgba(255,255,255,1) 55%, rgba(238,174,202,1) 100%);     
+    --main-bg:rgb(0, 119, 255);
+    --bg-img:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,237,255,1) 49%, rgba(255,255,255,1) 100%);
     --icon: url();
     --link-hover: rgba(255, 255, 255, 0.158);
     --icon-hover: rgba(99, 8, 204, 0.151);
+    height: 100vh;
 }
 :root {
-    --main-color: rgb(45, 4, 141);
+    --main-color: rgb(4, 18, 141);
     --main-bg: white;
-
-    --bg-img: linear-gradient(76deg, rgba(91,9,121,1) 5%, rgba(51,9,121,1) 50%, rgba(144,0,255,1) 100%); 
+    --bg-img: linear-gradient(180deg, rgba(0,128,255,1) 0%, rgba(0,131,255,1) 56%, rgba(0,40,136,1) 100%);  ;
     --icon: url();
     --icon-hover: rgba(189, 189, 189, 0.151);
+    height: 100vh;
 }
 * {
     color: var(--main-bg);
@@ -24,7 +25,7 @@ body {
     background-image: var(--bg-img);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 500%;
+
 
 }
 
