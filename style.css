@@ -13,6 +13,7 @@ html.light{
     --bg-img: linear-gradient(180deg, rgba(0,128,255,1) 0%, rgba(0,131,255,1) 56%, rgba(0,40,136,1) 100%);  ;
     --icon: url();
     --icon-hover: rgba(189, 189, 189, 0.151);
+	--icon-size: 120px;
     height: 100vh;
 }
 * {
@@ -22,11 +23,11 @@ html.light{
 }
 
 body {
-    background-image: var(--bg-img);
-    background-position: center;
-    background-repeat: no-repeat;
 
-
+  background-image: var(--bg-img);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #main{
@@ -49,15 +50,15 @@ h1{
 
 #pp{
     margin: 10px;
-    width: 120px;
-    height: 120px;
+    width: var(--icon-size);
+    height: var(--icon-size);
     border: 5px solid var(--main-bg);
     border-radius: 50%;
     transition: 1s;
 }
 #pp:hover{
-    width: 140px;
-    height: 140px;
+    width: var(--icon-size);
+    height: var(--icon-size);
     transition: 1s;
     border: 10px solid rgba(231, 231, 231, 0.199);
 
@@ -121,12 +122,20 @@ footer{
 
 div#btn{
     margin: auto;
-    border: 10px solid var(--main-bg);
-    border-radius: 50%;
     width: 10px;
     height: 10px;
-
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	
 }
+
+#svg-btn{
+	fill: var(--main-color);
+}
+
+
+
 div#info{
     background-color: rgba(170, 170, 170, 0.185);
     padding: 5px;
